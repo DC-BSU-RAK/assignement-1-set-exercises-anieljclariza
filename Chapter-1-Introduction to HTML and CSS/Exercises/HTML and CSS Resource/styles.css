@@ -1,0 +1,16 @@
+body {
+    /* Everything I wanted to have changed in the body element is in here */
+    font-family: "Courier New", Courier, monospace; /* Change font family */
+    font-size: 150%; /* Change font size */
+    color: lime; /* Change font color */
+    background-color: black; /* Change background color */
+    padding-left: 25%; /* Used to center my content */
+    padding-right: 25%; /* Used to center my content */
+  }
+  
+  img {
+    /* Made this make my image look better in most screens by sizing them relatively */
+    max-width: 100%;
+    height: auto;
+  }
+  
