@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,48 +9,188 @@
 
   <body>
     <h1>HTML and CSS Quick-Reference Guide</h1>
-
+    <hr />
     <p>
       Create a HTML & CSS quick-reference guide that covers all of the tags
       we've covered so far (and a few extras) with a description of how to use
-      them and code examples.
+      them and code examples. Use an external stylesheet. Be creative with your
+      styling, but keep it professional. Use the code and pre HTML tags to
+      include code examples. Include a minimum of 10 HTML tags. Include a
+      minimum of 8 CSS properties. Include a variety of different headers. Make
+      sure the code is indented and spaced properly.
     </p>
-    <hr />
+
+    <br />
 
     <h2>HTML tags</h2>
     <ol>
-      <li>The &lt;html&gt; tag : Used to wrap the entire html document.</li>
-      <ul>
-        <li>
-          <pre>
+      <li>
+        <strong>&lt;html&gt;</strong> : Defines the start and end of an HTML
+        document. It's the root element of the page.
+        <ul>
+          <li>
+            <pre>
 &lt;html&gt;
 
-    &lt;body&gt; &lt;/body&gt;
+  &lt;head&gt;
+    &lt;title&gt;Sample Page&lt;/title&gt;
+  &lt;/head&gt;
+  
+  &lt;body&gt;
+    &lt;h1&gt;Hello, World!&lt;/h1&gt;
+  &lt;/body&gt;
 
-    &lt;body&gt; &lt;/body&gt;
-
-&lt;/html&gt;
-          </pre>
-        </li>
-      </ul>
-
-      <li>
-        The &lt;head&gt; tag : Used to provide metadata(meta-information) about
-        the document such as its title, character encoding, linked stylesheets,
-        etc.
+&lt;/html&gt; 
+</pre
+            >
+          </li>
+        </ul>
       </li>
 
       <li>
-        The &lt;h&gt; tag : Used to display headings where &lt;h1&gt is the
-        biggest and &lt;h6&gt the smallest.
+        <strong>&lt;head&gt;</strong> : Contains metadata (information about the
+        document like title, character set, linked stylesheets, etc.)
+        <ul>
+          <li>
+            <pre>
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;My Page&lt;/title&gt;
+&lt;/head&gt;
+            </pre>
+          </li>
+        </ul>
       </li>
-      <ul>
-        <li>&lt;h1&gt; I am the biggest heading &lt;/h1&gt;</li>
-        <li>&lt;h6&gt; I am the smallest heading &lt;/h6&gt;</li>
-        <img src="images/heading.png" alt="heading" />
-      </ul>
 
-      <li></li>
+      <li>
+        <strong>&lt;title&gt;</strong> : Defines the title of the webpage, shown
+        in the browser's title bar or tab.
+        <ul>
+          <li>
+            <pre>
+&lt;head&gt;
+  &lt;title&gt;My Web Page&lt;/title&gt;
+&lt;/head&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;body&gt;</strong> : Contains the content of the webpage such
+        as text, images, links, and other elements.
+        <ul>
+          <li>
+            <pre>
+&lt;body&gt;
+  &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+  &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+&lt;/body&gt;            
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;h1&gt; to &lt;h6&gt;</strong> : Defines header tags, with
+        &lt;h1&gt; being the highest (largest) and &lt;h6&gt; the lowest
+        (smallest).
+        <ul>
+          <li>
+            <pre>
+&lt;h1&gt;Main Header&lt;/h1&gt;
+&lt;h2&gt;Sub Header&lt;/h2&gt;
+&lt;h3&gt;Smaller Header&lt;/h3&gt;
+
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;p&gt;</strong> : Defines a paragraph of text.
+        <ul>
+          <li>
+            <pre>
+&lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;a&gt;</strong> : Defines a hyperlink to link to other pages
+        or resources. It's used with the href attribute.
+        <ul>
+          <li>
+            <pre>
+&lt;a href="https://www.example.com"&gt;Click here to visit Example&lt;/a&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;img&gt;</strong> : Defines an image on the page. It uses
+        attributes like src (source) and alt (alternative text).
+        <ul>
+          <li>
+            <pre>
+&lt;img src="image.jpg" alt="A description of the image"&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;ul&gt; and &lt;ol&gt;</strong> : Defines an unordered
+        (bulleted) or ordered (numbered) list. Items inside are wrapped with
+        &lt;li&gt; tags.
+        <ul>
+          <li>
+            <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+  &lt;li&gt;Item 3&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;First Item&lt;/li&gt;
+  &lt;li&gt;Second Item&lt;/li&gt;
+  &lt;li&gt;Third Item&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>&lt;li&gt;</strong> : Defines a list item in an unordered or
+        ordered list.
+        <ul>
+          <li>
+            <pre>
+&lt;ul&gt;
+  &lt;li&gt;Item 1&lt;/li&gt;
+  &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+            </pre>
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>CSS Properties</h2>
+    <ol>
+      <li>color</li>
+      <li>background-color</li>
+      <li>font-size</li>
+      <li>font-family</li>
+      <li>margin</li>
+      <li>padding</li>
+      <li>border</li>
+      <li>width & height</li>
     </ol>
   </body>
 </html>
