@@ -1,7 +1,20 @@
 body {
-  background-color: #a3cfa7;
+  background-color: #f3bbb1;
   font-family: Arial, Helvetica, sans-serif;
 
   padding-left: 25%;
   padding-right: 25%;
+}
+
+.header {
+  border: 5px outset #f9f4eb;
+  background-color: #f1e5bc;
+  padding: 5%;
+  text-align: center;
+}
+
+.body {
+  border: 5px outset #f9f4eb;
+  background-color: #f1e5bc;
+  padding: 5%;
 }
