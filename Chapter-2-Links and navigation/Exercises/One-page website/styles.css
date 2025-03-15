@@ -10,7 +10,7 @@ body {
 .header {
   border: 5px outset #f9f4eb;
   background-color: #f1e5bc;
-  padding: 5%;
+  padding: 2.5%;
   text-align: center;
 }
 
@@ -20,7 +20,7 @@ body {
   padding: 5%;
 }
 
-a.button {
+.button {
   display: inline-block;
   padding: 10px 20px;
   background-color: white;
@@ -32,10 +32,10 @@ a.button {
   transition: background-color 0.3s;
 }
 
-a.button:hover {
-  background-color: #45a049;
+.button:hover {
+  background-color: pink;
 }
 
-a.button:active {
-  background-color: #3e8e41;
+.button:active {
+  background-color: crimson;
 }
