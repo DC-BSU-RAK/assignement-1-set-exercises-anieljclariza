@@ -1,16 +1,14 @@
 body {
-  background-color: white;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  text-align: center;
 }
 
 img {
-  width: 400px;
+  width: 640px;
   max-width: 100%;
   height: auto;
-  margin: 2.5%;
-  border: 5px solid black;
-}
 
-.figs {
-  display: flex;
-  justify-content: center;
+  border: 5px solid white;
 }
