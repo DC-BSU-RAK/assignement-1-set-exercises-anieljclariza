@@ -1,3 +1,5 @@
+/* Used to style the body element */
+/* Each property is used to style the background color, font family, font size, color, and spacing of the document */
 body {
   background-color: black;
   font-family: "Courier New", Courier, monospace;
@@ -6,6 +8,4 @@ body {
 
   padding-left: 25%;
   padding-right: 25%;
-
-  word-wrap: break-word;
 }
