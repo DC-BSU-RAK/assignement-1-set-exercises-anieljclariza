@@ -9,7 +9,7 @@ body {
 }
 
 img {
-  /* Made this make my image look better in most screens by sizing them relatively */
+  /* Made this make my image adapt and look proper in most screens by sizing them relatively */
   max-width: 100%;
   height: auto;
 }
