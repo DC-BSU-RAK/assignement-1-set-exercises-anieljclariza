@@ -1,17 +1,9 @@
-<!-- ### One-page website :ballot_box_with_check:     
-
-Pick a television series, film or game and design a really simple one-page website (just text, no images). Your website should include:
-
-* An overview of the plot, key information, cast and/or creative team, characters and any reviews you can find. 
-* A nav bar at the top which allows the user to quickly navigate to sections further down the page (anchor Ids).
-* A link to the actual website of the film/game etc. which opens in a new tab when clicked. 
-* Use of an external CSS file to style elements creatively (avoid inline styling and use classes instead).
-* At least two classes. 
-* One link styled as a button.
--->
-
+<!-- Define document type as HTML5 -->
 <!DOCTYPE html>
+
+<!-- Set document language to English -->
 <html lang="en">
+  <!-- Defines important meta tags for the document such as document character set, viewport settings, title, and link to external css file -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,13 +12,21 @@ Pick a television series, film or game and design a really simple one-page websi
   </head>
 
   <body>
+    <!-- Defines a div with a class and id named, "header" and "top", respectively -->
+    <!-- Where the class, "header", is used here to inherit the class's css properties -->
+    <!-- Where the id, "top" is define here to be used to navigate back to the top -->
     <div class="header" id="top">
+      <!-- Defines the main heading of the document which is the title of the target film -->
       <h1>Grave of the Fireflies</h1>
+
+      <!-- Defines the navigation bar with "Plot", "Key Information", "Main Cast and Creative Team", "Characters", "Reviews", and "Wiki" set as the links -->
       <nav>
         <a href="#Plot">Plot</a> |
         <a href="#Key Information">Key Information</a> |
         <a href="#Main Cast and Creative Team">Main Cast & Creative Team</a> |
         <a href="#Characters">Characters</a> | <a href="#Reviews">Reviews</a> |
+
+        <!-- The "target=_"blank"" atribute is used to open the Wiki link in a new tag/window instead of the current one -->
         <a
           href="https://en.wikipedia.org/wiki/Grave_of_the_Fireflies"
           target="_blank"
@@ -35,10 +35,15 @@ Pick a television series, film or game and design a really simple one-page websi
       </nav>
     </div>
 
+    <!-- Defines a horizontal rule to separate the header from the body-->
     <hr />
 
+    <!-- Defines a div with class, "body", to inherit the class's css properties -->
     <div class="body">
+      <!-- Defines an h2 with the respective id where it will be directed to this section when the respective link is pressed at the nav bar above -->
       <h2 id="Plot">Plot</h2>
+
+      <!-- Define multiple p elements to give the structure of the plot of the target film -->
       <p>
         In March 1945, American bombers destroy most of Kobe during the waning
         days of the Pacific War. Children of an Imperial Japanese Navy captain,
@@ -86,10 +91,13 @@ Pick a television series, film or game and design a really simple one-page websi
         Setsuko's ashes spread out, and her spirit springs from the container
         and is joined by Seita's spirit and a cloud of fireflies. The two board
         a ghostly train and, throughout the journey, look back at the events
-        leading to Seita's death as silent, passive observers.[a] Their spirits
+        leading to Seita's death as silent, passive observers. Their spirits
         arrive at their destination: a hilltop bench overlooking present-day
         Kobe, surrounded by fireflies, healthy and content.
       </p>
+
+      <!-- a element used with the href set as "#top" to go back to top when pressed -->
+      <!-- class "button" is used to inherit the class's css properties -->
       <a href="#top" class="button">Back to top</a>
     </div>
 
