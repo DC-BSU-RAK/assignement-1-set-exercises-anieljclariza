@@ -1,15 +1,25 @@
+<!-- Defines document type as HTML5 -->
 <!DOCTYPE html>
+
+<!-- Set document language to English -->
 <html lang="en">
+  <!-- Defines important meta tags for the document such as document character set, viewport settings, title, and link to external css file -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>One-Page Website</title>
+    <title>Multi-page website</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
+    <!-- Defines a div with a class and id named, "header" and "top", respectively -->
+    <!-- Where the class, "header", is used here to inherit the class's css properties -->
+    <!-- Where the id, "top" is defined here to be used to navigate back to the top -->
     <div class="header" id="top">
+      <!-- Defines the main heading, which is the title of the target film -->
       <h1>Grave of the Fireflies</h1>
+
+      <!-- Defines a nav bar, wherein separate html files are linked here to redirect to their respective webpages when pressed-->
       <nav>
         <a href="index.html">Plot</a> |
         <a href="pages/keyinfo.html">Key Information</a> |
@@ -24,8 +34,10 @@
       </nav>
     </div>
 
+    <!-- Defines a div with a class named, "body", to inherit its class's properties -->
     <div class="body">
-      <h2 id="Plot">Plot</h2>
+      <!-- Defines an h2 element to act as the main webpage and link here when the link is pressed at the nav bar -->
+      <h2>Plot</h2>
       <p>
         In March 1945, American bombers destroy most of Kobe during the waning
         days of the Pacific War. Children of an Imperial Japanese Navy captain,
@@ -77,6 +89,7 @@
         arrive at their destination: a hilltop bench overlooking present-day
         Kobe, surrounded by fireflies, healthy and content.
       </p>
+      <!-- Defines a simeple back to top button to go back to top when pressed  -->
       <a href="#top" class="button">Back to top</a>
     </div>
   </body>
