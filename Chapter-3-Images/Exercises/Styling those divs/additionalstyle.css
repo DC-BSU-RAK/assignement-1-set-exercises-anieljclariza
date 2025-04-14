@@ -1,0 +1,9 @@
+#div_A {
+  border-color: blueviolet;
+  box-shadow: 10px 10px 10px red;
+}
+
+#div_B {
+  border-color: lime;
+  box-shadow: inset 10px 10px 10px black;
+}
