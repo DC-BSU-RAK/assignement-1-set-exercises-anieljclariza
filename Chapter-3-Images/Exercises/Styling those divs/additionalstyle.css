@@ -7,3 +7,15 @@
   border-color: lime;
   box-shadow: inset 10px 10px 10px black;
 }
+
+#div_C {
+  border-radius: 10px;
+  border-color: darkorange;
+
+  box-shadow: 0 0 0 10px blue, 0 0 0 20px red, 0 0 0 30px green;
+}
+
+#div_D {
+  border-color: firebrick;
+  text-shadow: 5px 5px 1px black;
+}
