@@ -1,20 +1,23 @@
+/* Used the proper border-color and box-shadow values to mimic div_A */
 #div_A {
   border-color: blueviolet;
   box-shadow: 10px 10px 10px red;
 }
 
+/* Used the proper border-color and box-shadow values to mimic div_B */
 #div_B {
   border-color: lime;
   box-shadow: inset 10px 10px 10px black;
 }
 
+/* Used the proper border-color, border-radius, and box-shadow values to mimic div_C */
 #div_C {
-  border-radius: 10px;
   border-color: darkorange;
-
+  border-radius: 10px;
   box-shadow: 0 0 0 10px blue, 0 0 0 20px red, 0 0 0 30px green;
 }
 
+/* Used the proper border-color and text-shadow values to mimic div_D */
 #div_D {
   border-color: firebrick;
   text-shadow: 5px 5px 1px black;
