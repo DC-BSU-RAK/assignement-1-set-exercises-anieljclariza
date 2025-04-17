@@ -1,0 +1,49 @@
+<!-- Defines document type as HTML5 -->
+<!DOCTYPE html>
+
+<!-- Set document language to English -->
+<html lang="en">
+  <!-- Defines important meta tags for the document such as document character set, viewport settings, title, and link to external css file -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extended Audio Sampler</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <!-- Start of <body> -->
+  <body>
+    <!-- <header> containing the <h1> header to serve as banner header -->
+    <header>
+      <h1>Extended Audio Sampler</h1>
+    </header>
+
+    <!-- <div> elements with class names, "container", "tts-section", and "button-section" each with their own uses and to be utilized in CSS file -->
+    <div class="container">
+      <div class="tts-section">
+        <!-- <textarea> with id and placeholder to be used for text-to-speech -->
+        <textarea
+          id="tts-input"
+          placeholder="Type something here..."
+        ></textarea>
+        <!-- Followed by a <button> with an id to be used as trigger -->
+        <button id="speak-btn">Speak</button>
+      </div>
+
+      <div class="button-section">
+        <!-- <button>s with custom atribute to be used for index.js -->
+        <button button-sound="ah-ha">Ah-Ha</button>
+        <button button-sound="back-of-the-net">Back of the net</button>
+        <button button-sound="bangoutoforder">Bang out of order</button>
+        <button button-sound="dan">Dan</button>
+        <button button-sound="emailoftheevening">Email of the evening</button>
+        <button button-sound="hellopartridge">Hello Partridge</button>
+        <button button-sound="iateascotchegg">I ate a scotch egg</button>
+        <button button-sound="imconfused">I'm confused</button>
+      </div>
+    </div>
+
+    <!-- Load index.js here at last improve loading speed -->
+    <script src="index.js"></script>
+  </body>
+</html>

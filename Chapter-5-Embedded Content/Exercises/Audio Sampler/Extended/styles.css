@@ -1,0 +1,70 @@
+/* Customize <body> css properties */
+body {
+  padding-top: 250px;
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Change <header> css properties */
+header {
+  top: 0;
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  padding: 50px;
+  color: white;
+}
+
+/* Change container class css properties */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  padding: 100px;
+}
+
+/* Change tts-section class css properties */
+.tts-section {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  gap: 15px;
+}
+
+/* Change button-section class css properties */
+.button-section {
+  display: grid;
+  grid-template-columns: repeat(4, 200px);
+  gap: 30px;
+}
+
+/* Change <button> css properties */
+button {
+  padding: 25px;
+  border-color: silver;
+  border-width: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Change css properties when a <button> is hovered on */
+button:hover {
+  background-color: red;
+  transform: scale(1.2);
+  color: white;
+}
+
+/* Change css properties when a <button> is clicked on */
+button:active {
+  transform: scale(0.8);
+  background-color: green;
+  color: white;
+}
