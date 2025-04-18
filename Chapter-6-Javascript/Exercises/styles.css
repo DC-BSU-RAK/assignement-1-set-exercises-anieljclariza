@@ -1,0 +1,78 @@
+/* General styling for the page */
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Main container */
+.container {
+  background-color: black;
+  color: white;
+  padding: 2rem 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 320px;
+}
+
+/* Headings */
+h1 {
+  color: #333;
+  margin-bottom: 1.5rem;
+}
+
+/* Labels and input fields */
+label {
+  display: block;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+  color: #444;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+/* Input focus effect */
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Button styling */
+button {
+  margin-top: 1.5rem;
+  padding: 0.7rem 1.5rem;
+  font-size: 1rem;
+  background-color: #0077cc;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #005fa3;
+}
+
+/* Result display */
+#totalCost {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #222;
+}
