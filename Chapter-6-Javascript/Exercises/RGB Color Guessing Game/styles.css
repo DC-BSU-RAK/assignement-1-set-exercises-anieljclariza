@@ -1,22 +1,97 @@
+/* Body */
 body {
-  background-color: black;
-  color: white;
-  font-family: Arial, Helvetica, sans-serif;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
   margin: 0;
+  padding: 0;
+  font-family: Arial;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 }
 
+/* Main container */
 .container {
-  background-color: white;
-  color: black;
+  text-align: center;
+  background: white;
   padding: 100px;
-  border-radius: 50px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 500px;
+}
 
+/* RGB display */
+#rgbDisplay {
+  font-size: 2rem;
+}
+
+/* Option buttons container */
+.options {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+/* Color buttons */
+.color-btn {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+  transition: transform 0.2s, border 0.2s;
+}
+
+/* Makes hovered item bigger */
+.color-btn:hover {
+  transform: scale(1.2);
+}
+
+/* Makes clicked item smaller */
+.color-btn:active {
+  transform: scale(0.8);
+}
+
+/* Game feedback message */
+#gameInfo {
+  margin: 1rem 0;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/* Lives and score display */
+#lives,
+#score {
+  font-weight: bold;
+  color: black;
+}
+
+/* Restart button */
+#restart {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: transform 0.2s, border 0.2s;
+}
+
+/* Makes restart button bigger when hovered on */
+#restart:hover {
+  background-color: #45a049;
+  transform: scale(1.2);
+}
+
+/* Makes restart button bigger when clicked on */
+#restart:active {
+  transform: scale(0.8);
+}
+
+/* Hidden utility class */
+.hidden {
+  display: none;
 }

@@ -6,17 +6,30 @@
     <title>RGB Color Guessing Game</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- <div> with respective class name to be used for styling later -->
     <div class="container">
+      <!-- header -->
       <h1>RGB Color Guessing Game</h1>
 
+      <!-- <p> with respective id to be used to display the RGB values later -->
       <p id="rgbDisplay">RGB(?, ?, ? )</p>
 
+      <!-- <div> with respective id and class name to be used for scripts and styling -->
       <div id="colorOptions" class="options"></div>
 
+      <!-- <p> with respective id to be used to display game info later -->
       <p id="gameInfo"></p>
+
+      <!-- Display lives and score here -->
       <p>Lives: <span id="lives">3</span> | Score: <span id="score">0</span></p>
+
+      <!-- Restart button hidden first -->
       <button id="restart" class="hidden">Play again</button>
     </div>
+
+    <!-- Link to index.js -->
+    <script src="index.js"></script>
   </body>
 </html>
