@@ -1,3 +1,4 @@
+/* Style <header> and center it */
 header {
   position: fixed;
   top: 0;
@@ -6,24 +7,28 @@ header {
   color: white;
 }
 
+/* Style <body> and center it */
 body {
   background-color: black;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 
+  /*  */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
 }
 
+/* Style button class */
 .button {
   display: grid;
   grid-template-columns: repeat(4, 400px);
   gap: 50px;
 }
 
+/* Style <button> */
 button {
   padding: 50px;
   border-color: gold;
@@ -37,12 +42,14 @@ button {
   transition: background-color 0.2s;
 }
 
+/* Make <button> bigger when hovered on */
 button:hover {
   background-color: red;
   transform: scale(1.2);
   color: white;
 }
 
+/* Make <button> bigger when clicked on */
 button:active {
   transform: scale(0.8);
   background-color: green;

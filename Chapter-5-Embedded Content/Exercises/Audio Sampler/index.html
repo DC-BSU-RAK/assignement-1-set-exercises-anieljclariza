@@ -1,17 +1,25 @@
+<!-- Set document type to HTML5 -->
 <!DOCTYPE html>
+
+<!-- Set document language to English -->
 <html lang="en">
+  <!-- Defines important meta tags for the document such as document character set, viewport settings, title, and link to external css file. -->
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Audio Sample</title>
+    <title>Audio Sampler</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
+
   <body>
+    <!-- add <h1> in <header> to act as banner -->
     <header>
       <h1>Audio Sampler</h1>
     </header>
 
+    <!-- Make <div> with respective class name -->
     <div class="button">
+      <!-- Make <button> with custom atribute named "button-sound" to be used for JS later -->
       <button button-sound="ah-ha">Ah-Ha</button>
       <button button-sound="back-of-the-net">Back of the net</button>
       <button button-sound="bangoutoforder">Bang out of order</button>
@@ -22,6 +30,7 @@
       <button button-sound="imconfused">I'm confused</button>
     </div>
 
+    <!-- Link to index.js for script-->
     <script src="index.js"></script>
   </body>
 </html>
