@@ -1,4 +1,4 @@
-/* Customize <body> css properties */
+/* Style body */
 body {
   padding-top: 250px;
   background-color: black;
@@ -7,7 +7,7 @@ body {
   margin: 0;
 }
 
-/* Change <header> css properties */
+/* Style header */
 header {
   top: 0;
   position: fixed;
@@ -17,7 +17,7 @@ header {
   color: white;
 }
 
-/* Change container class css properties */
+/* Style container */
 .container {
   display: flex;
   justify-content: center;
@@ -26,7 +26,7 @@ header {
   padding: 100px;
 }
 
-/* Change tts-section class css properties */
+/* Style text-to-speech section */
 .tts-section {
   display: flex;
   flex-direction: column;
@@ -34,14 +34,14 @@ header {
   gap: 15px;
 }
 
-/* Change button-section class css properties */
+/* Style button to display 3 rows and 3 columns */
 .button-section {
   display: grid;
-  grid-template-columns: repeat(4, 200px);
+  grid-template-columns: repeat(3, 200px);
   gap: 30px;
 }
 
-/* Change <button> css properties */
+/* Style button */
 button {
   padding: 25px;
   border-color: silver;
@@ -55,14 +55,14 @@ button {
   transition: background-color 0.2s;
 }
 
-/* Change css properties when a <button> is hovered on */
+/* Style button when hovered on */
 button:hover {
   background-color: red;
   transform: scale(1.2);
   color: white;
 }
 
-/* Change css properties when a <button> is clicked on */
+/* Style button when clicked on */
 button:active {
   transform: scale(0.8);
   background-color: green;

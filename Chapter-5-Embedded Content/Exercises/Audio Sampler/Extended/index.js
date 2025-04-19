@@ -1,27 +1,17 @@
-// Find all buttons inside any element with the button-section class
-const buttons = document.querySelectorAll(".button-section button");
-
-// Loop through each of those buttons
-buttons.forEach((button) => {
-  // Listens for a button click
-  button.addEventListener("click", () => {
-    // Reads button-sound to get name of sound
-    const sound = button.getAttribute("button-sound");
-    // Creates a new Audio object from file and plays it
-    const audio = new Audio(`../audio/${sound}.mp3`);
-    audio.play();
-  });
+// Event listener for the speak button (Text-to-Speech functionality)
+document.getElementById("speak-btn").addEventListener("click", () => {
+  const text = document.getElementById("tts-input").value; // Get the text input value
+  const utterance = new SpeechSynthesisUtterance(text); // Create a speech utterance with the text
+  speechSynthesis.speak(utterance); // Trigger speech synthesis to speak the text
 });
 
-// Get speak button and input field by their id
-const speakBtn = document.getElementById("speak-btn");
-const ttsInput = document.getElementById("tts-input");
+// Event listeners for the sound buttons
+document.querySelectorAll("button[button-sound]").forEach((button) => {
+  button.addEventListener("click", () => {
+    const soundName = button.getAttribute("button-sound"); // Get the sound name from the button attribute
 
-// When speak button is clicked, grab typed text value from input field/box, create built-in web API for tts named SpeechSynthesisUtterance
-
-// Then speechSynthesis.speak(utterance) tells the browser to speak the text out loud.
-speakBtn.addEventListener("click", () => {
-  const text = ttsInput.value;
-  const utterance = new SpeechSynthesisUtterance(text);
-  speechSynthesis.speak(utterance);
+    // Create a new Audio object with the path to the sound file
+    const audio = new Audio(`../Audio/${soundName}.mp3`);
+    audio.play(); // Play the sound
+  });
 });
